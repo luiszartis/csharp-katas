@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Triplets", "Triplets", "{C36D1A3F-776D-414C-B278-7A3E55C2C4C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SumIntegers", "SumIntegers", "{384F9E07-358B-442B-AB72-4BCA1D766541}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas.SumIntegers.Console", "Katas.SumIntegers.Console\Katas.SumIntegers.Console.csproj", "{A64E9AAB-6D2A-440C-BA4D-3FAADEEB27A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas.SumIntegers.Tests", "Katas.SumIntegers.Tests\Katas.SumIntegers.Tests.csproj", "{8966B280-496A-4F8C-8EAD-ED07F5AF5193}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas.Triplets.Tests", "Katas.Triplets.Tests\Katas.Triplets.Tests.csproj", "{383300BF-A252-4869-94F0-D613BAABA255}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas.Console.Application", "Katas.Console.Application\Katas.Console.Application.csproj", "{44BDE43B-AA3F-40A4-977C-2D13B9C84B45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas.Triplets.Console", "Katas.Triplets.Console\Katas.Triplets.Console.csproj", "{181BE6F7-341B-481F-85E3-0E0BFF1F7606}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A64E9AAB-6D2A-440C-BA4D-3FAADEEB27A3} = {384F9E07-358B-442B-AB72-4BCA1D766541}
+		{8966B280-496A-4F8C-8EAD-ED07F5AF5193} = {384F9E07-358B-442B-AB72-4BCA1D766541}
+		{383300BF-A252-4869-94F0-D613BAABA255} = {C36D1A3F-776D-414C-B278-7A3E55C2C4C7}
+		{181BE6F7-341B-481F-85E3-0E0BFF1F7606} = {C36D1A3F-776D-414C-B278-7A3E55C2C4C7}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A64E9AAB-6D2A-440C-BA4D-3FAADEEB27A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A64E9AAB-6D2A-440C-BA4D-3FAADEEB27A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A64E9AAB-6D2A-440C-BA4D-3FAADEEB27A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A64E9AAB-6D2A-440C-BA4D-3FAADEEB27A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8966B280-496A-4F8C-8EAD-ED07F5AF5193}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8966B280-496A-4F8C-8EAD-ED07F5AF5193}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8966B280-496A-4F8C-8EAD-ED07F5AF5193}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8966B280-496A-4F8C-8EAD-ED07F5AF5193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{383300BF-A252-4869-94F0-D613BAABA255}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{383300BF-A252-4869-94F0-D613BAABA255}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{383300BF-A252-4869-94F0-D613BAABA255}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{383300BF-A252-4869-94F0-D613BAABA255}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44BDE43B-AA3F-40A4-977C-2D13B9C84B45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44BDE43B-AA3F-40A4-977C-2D13B9C84B45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44BDE43B-AA3F-40A4-977C-2D13B9C84B45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44BDE43B-AA3F-40A4-977C-2D13B9C84B45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{181BE6F7-341B-481F-85E3-0E0BFF1F7606}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{181BE6F7-341B-481F-85E3-0E0BFF1F7606}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{181BE6F7-341B-481F-85E3-0E0BFF1F7606}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{181BE6F7-341B-481F-85E3-0E0BFF1F7606}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

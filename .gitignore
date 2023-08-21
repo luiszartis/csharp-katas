@@ -4,3 +4,4 @@ obj
 bin
 Folder.DotSettings.user
 run
+*.DotSettings.user

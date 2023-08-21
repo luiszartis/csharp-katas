@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <StartupObject>Katas.Console.Application.Program</StartupObject>
+    </PropertyGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Katas.SumIntegers.Console\Katas.SumIntegers.Console.csproj" />
+        <ProjectReference Include="..\Katas.Triplets.Console\Katas.Triplets.Console.csproj" />
+    </ItemGroup>
+
+</Project>
