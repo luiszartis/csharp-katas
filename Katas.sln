@@ -14,6 +14,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas.Console.Application",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas.Triplets.Console", "Katas.Triplets.Console\Katas.Triplets.Console.csproj", "{181BE6F7-341B-481F-85E3-0E0BFF1F7606}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas.SumBigIntegers.Console", "Katas.SumBigIntegers.Console\Katas.SumBigIntegers.Console.csproj", "{D89823D4-0CBF-470A-92DA-EFD3A6722675}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SumBigIntegers", "SumBigIntegers", "{5726AD49-AA27-44EA-A72F-E364F590DC4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas.SumBigintegers.Tests", "Katas.SumBigintegers.Tests\Katas.SumBigintegers.Tests.csproj", "{2A84ED69-16D0-40E2-B5D9-E74529E2E45F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +30,8 @@ Global
 		{8966B280-496A-4F8C-8EAD-ED07F5AF5193} = {384F9E07-358B-442B-AB72-4BCA1D766541}
 		{383300BF-A252-4869-94F0-D613BAABA255} = {C36D1A3F-776D-414C-B278-7A3E55C2C4C7}
 		{181BE6F7-341B-481F-85E3-0E0BFF1F7606} = {C36D1A3F-776D-414C-B278-7A3E55C2C4C7}
+		{D89823D4-0CBF-470A-92DA-EFD3A6722675} = {5726AD49-AA27-44EA-A72F-E364F590DC4A}
+		{2A84ED69-16D0-40E2-B5D9-E74529E2E45F} = {5726AD49-AA27-44EA-A72F-E364F590DC4A}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{A64E9AAB-6D2A-440C-BA4D-3FAADEEB27A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -46,5 +54,13 @@ Global
 		{181BE6F7-341B-481F-85E3-0E0BFF1F7606}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{181BE6F7-341B-481F-85E3-0E0BFF1F7606}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{181BE6F7-341B-481F-85E3-0E0BFF1F7606}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D89823D4-0CBF-470A-92DA-EFD3A6722675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D89823D4-0CBF-470A-92DA-EFD3A6722675}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D89823D4-0CBF-470A-92DA-EFD3A6722675}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D89823D4-0CBF-470A-92DA-EFD3A6722675}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A84ED69-16D0-40E2-B5D9-E74529E2E45F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A84ED69-16D0-40E2-B5D9-E74529E2E45F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A84ED69-16D0-40E2-B5D9-E74529E2E45F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A84ED69-16D0-40E2-B5D9-E74529E2E45F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
