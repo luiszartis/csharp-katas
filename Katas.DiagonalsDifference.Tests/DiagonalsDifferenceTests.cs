@@ -19,12 +19,10 @@ public class DiagonalsDifferenceTests
     public void Calculate_WhenMatrixIsNotSquare_RaisesException()
     {
         // arrange
-        const int rows = 7;
-        const int cols = 4;
-        var matrix = MatrixManager.Create(rows, cols);
+        var matrix = MatrixManager.Create(7, 4);
 
         // act
-        var action = () => Console.DiagonalsDifference.Calculate(matrix);
+        var action = () => _sut.Calculate(matrix);
 
         // assert
         var ex = action.Should().Throw<Exception>();
@@ -35,12 +33,10 @@ public class DiagonalsDifferenceTests
     public void Calculate_WhenMatrixIsFine_ReturnsPositive()
     {
         // arrange
-        const int rows = 5;
-        const int cols = 5;
-        var matrix = MatrixManager.Create(rows, cols);
+        var matrix = MatrixManager.Create(5, 5);
 
         // act
-        var result = Console.DiagonalsDifference.Calculate(matrix);
+        var result = _sut.Calculate(matrix);
 
         // assert
         result.Should().BePositive();
@@ -51,7 +47,7 @@ public class DiagonalsDifferenceTests
     public void Calculate_WhenMatrixIsFine_ReturnsExactDifference(int[,] matrix, int expected)
     {
         // act
-        var result = Console.DiagonalsDifference.Calculate(matrix);
+        var result = _sut.Calculate(matrix);
 
         // assert
         result.Should().Be(expected);

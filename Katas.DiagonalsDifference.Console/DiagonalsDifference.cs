@@ -2,7 +2,7 @@
 
 public class DiagonalsDifference
 {
-    public static int Calculate(int[,] matrix)
+    public int Calculate(int[,] matrix)
     {
         if (!MatrixManager.IsSquare(matrix))
         {
