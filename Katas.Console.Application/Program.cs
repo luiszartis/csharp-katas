@@ -1,4 +1,5 @@
-﻿using Katas.SumIntegers.Console;
+﻿using System.Text.Json;
+using Katas.SumIntegers.Console;
 
 namespace Katas.Console.Application;
 
@@ -8,6 +9,14 @@ public static class Program
     {
         SumIntegers();
         CompareTriplets();
+        CalculateIntRatio();
+    }
+
+    private static void CalculateIntRatio()
+    {
+        int[] numbers = { 10, -20, 0, 0, 0, 40, 50 };
+        var ratios = PlusMinus.Console.PlusMinus.CalculateRatios(numbers);
+        System.Console.WriteLine(JsonSerializer.Serialize(ratios));
     }
 
     private static void SumIntegers()

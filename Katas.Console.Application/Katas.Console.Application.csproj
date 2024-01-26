@@ -10,6 +10,7 @@
     <ItemGroup>
         <ProjectReference Include="..\Katas.SumIntegers.Console\Katas.SumIntegers.Console.csproj" />
         <ProjectReference Include="..\Katas.Triplets.Console\Katas.Triplets.Console.csproj" />
+        <ProjectReference Include="..\Katas.PlusMinus.Console\Katas.PlusMinus.Console.csproj" />
     </ItemGroup>
 
 </Project>
