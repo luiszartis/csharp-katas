@@ -1,6 +1,6 @@
 ﻿namespace Katas.DiagonalsDifference.Console;
 
-public class MatrixManager
+public static class MatrixManager
 {
     private const int IntGap = 20;
     public static int[,] Create(int rows, int cols)

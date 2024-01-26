@@ -19,10 +19,9 @@ public static class Program
 
     private static void CompareTriplets()
     {
-        var triplets = new Triplets.Console.Triplets();
-        var alice = new List<int>() { 17, 28, 30 };
-        var bob = new List<int>() { 99, 16, 8 };
-        var result = triplets.Compare(alice, bob);
+        var alice = new List<int> { 17, 28, 30 };
+        var bob = new List<int> { 99, 16, 8 };
+        var result = Triplets.Console.Triplets.Compare(alice, bob);
         var winner = result[0] > result[1] ? "alice" : "bob";
         winner = result[0] == result[1] ? "No one" : winner;
         System.Console.WriteLine(winner);

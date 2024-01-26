@@ -2,9 +2,9 @@
 
 namespace Katas.SumBigIntegers.Console;
 
-public class SumBigIntegers
+public static class SumBigIntegers
 {
-    public BigInteger Sum(List<BigInteger> list, int size)
+    public static BigInteger Sum(List<BigInteger> list, int size)
     {
         if (list.Count != size)
         {

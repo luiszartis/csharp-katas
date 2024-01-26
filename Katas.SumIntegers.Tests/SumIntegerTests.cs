@@ -34,10 +34,10 @@ public class SumIntegerTests
     {
         // arrange
         var list = new List<int>() { 1, 2, 3 };
-        
+
         // act
         var result = _sut.Sum(list, list.Count);
-        
+
         // assert
         result.Should().Be(list.Sum());
     }

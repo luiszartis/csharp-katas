@@ -1,5 +1,4 @@
 using System.Numerics;
-using AutoFixture;
 using FluentAssertions;
 using Xunit;
 
@@ -7,14 +6,6 @@ namespace Katas.SumBigIntegers.Tests;
 
 public class SumIntegerTests
 {
-    private readonly Console.SumBigIntegers _sut;
-
-    public SumIntegerTests()
-    {
-        IFixture fixture = new Fixture();
-        _sut = fixture.Create<Console.SumBigIntegers>();
-    }
-
     [Fact]
     public void Sum_WhenSizeDifferentFromTheList_RaisesException()
     {
@@ -22,7 +13,7 @@ public class SumIntegerTests
         var list = new List<BigInteger>() { 2, 4, 4 };
 
         // act
-        var action = () =>  _sut.Sum(list, list.Count + 1);
+        var action = () =>  Console.SumBigIntegers.Sum(list, list.Count + 1);
 
         // assert
         var ex = action.Should().Throw<Exception>();
@@ -34,10 +25,10 @@ public class SumIntegerTests
     {
         // arrange
         var list = new List<BigInteger>() { 1000000001, 1000000002, 1000000003, 1000000004, 1000000005 };
-        
+
         // act
-        var result = _sut.Sum(list, list.Count);
-        
+        var result = Console.SumBigIntegers.Sum(list, list.Count);
+
         // assert
         result.Should().Be(list.Aggregate(BigInteger.Add));
         result.Should().Be(5000000015);

@@ -1,8 +1,8 @@
 ﻿namespace Katas.DiagonalsDifference.Console;
 
-public class DiagonalsDifference
+public static class DiagonalsDifference
 {
-    public int Calculate(int[,] matrix)
+    public static int Calculate(int[,] matrix)
     {
         if (!MatrixManager.IsSquare(matrix))
         {

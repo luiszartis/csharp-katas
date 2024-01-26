@@ -1,4 +1,3 @@
-using AutoFixture;
 using FluentAssertions;
 using Katas.DiagonalsDifference.Console;
 using Xunit;
@@ -7,14 +6,6 @@ namespace Katas.DiagonalsDifference.Tests;
 
 public class DiagonalsDifferenceTests
 {
-    private readonly Console.DiagonalsDifference _sut;
-
-    public DiagonalsDifferenceTests()
-    {
-        IFixture fixture = new Fixture();
-        _sut = fixture.Create<Console.DiagonalsDifference>();
-    }
-
     [Fact]
     public void Calculate_WhenMatrixIsNotSquare_RaisesException()
     {
@@ -22,7 +13,7 @@ public class DiagonalsDifferenceTests
         var matrix = MatrixManager.Create(7, 4);
 
         // act
-        var action = () => _sut.Calculate(matrix);
+        var action = () => Console.DiagonalsDifference.Calculate(matrix);
 
         // assert
         var ex = action.Should().Throw<Exception>();
@@ -36,7 +27,7 @@ public class DiagonalsDifferenceTests
         var matrix = MatrixManager.Create(5, 5);
 
         // act
-        var result = _sut.Calculate(matrix);
+        var result = Console.DiagonalsDifference.Calculate(matrix);
 
         // assert
         result.Should().BePositive();
@@ -47,7 +38,7 @@ public class DiagonalsDifferenceTests
     public void Calculate_WhenMatrixIsFine_ReturnsExactDifference(int[,] matrix, int expected)
     {
         // act
-        var result = _sut.Calculate(matrix);
+        var result = Console.DiagonalsDifference.Calculate(matrix);
 
         // assert
         result.Should().Be(expected);

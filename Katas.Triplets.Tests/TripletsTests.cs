@@ -5,8 +5,6 @@ namespace Katas.Triplets.Tests;
 
 public class TripletsTests
 {
-    private readonly Console.Triplets _sut = new();
-
     [Fact]
     public void Compare_WhenTheListHaveSameOneValues_ThenReturnZeroScore()
     {
@@ -15,7 +13,7 @@ public class TripletsTests
         var aliceList = (new [] { 1, 1, 1 }).ToList();
 
         // act
-        var response = _sut.Compare(bobList, aliceList);
+        var response = Console.Triplets.Compare(bobList, aliceList);
 
         // assert
         response.Count.Should().Be(2);
@@ -31,7 +29,7 @@ public class TripletsTests
         var aliceList = (new [] { 1, 1, 1 }).ToList();
 
         // act
-        var response = _sut.Compare(bobList, aliceList);
+        var response = Console.Triplets.Compare(bobList, aliceList);
 
         // assert
         response.Count.Should().Be(2);
@@ -46,7 +44,7 @@ public class TripletsTests
         var aliceList = (new [] { 2, 1, 1 }).ToList();
 
         // act
-        var response = _sut.Compare(bobList, aliceList);
+        var response = Console.Triplets.Compare(bobList, aliceList);
 
         // assert
         response.Count.Should().Be(2);
@@ -62,7 +60,7 @@ public class TripletsTests
         var aliceList = (new [] { 1, 1, 1 }).ToList();
 
         // act
-        var response = _sut.Compare(bobList, aliceList);
+        var response = Console.Triplets.Compare(bobList, aliceList);
 
         // assert
         response.Count.Should().Be(2);
